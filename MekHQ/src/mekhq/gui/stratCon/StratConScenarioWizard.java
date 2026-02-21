@@ -461,8 +461,8 @@ public class StratConScenarioWizard extends JDialog {
     }
 
     private void setLeadershipUI(GridBagConstraints gbc, List<Unit> eligibleUnits, int leadershipSkill) {
-        // Leadership budget is capped at 5 levels
-        int leadershipBudget = Math.min(BASE_LEADERSHIP_BUDGET * leadershipSkill, BASE_LEADERSHIP_BUDGET * 5);
+        // Leadership budget is capped at 8 levels
+        int leadershipBudget = Math.min(BASE_LEADERSHIP_BUDGET * leadershipSkill, BASE_LEADERSHIP_BUDGET * 8);
         int maxSelectionSize = leadershipBudget - currentScenario.getLeadershipPointsUsed();
 
         gbc.anchor = GridBagConstraints.WEST;

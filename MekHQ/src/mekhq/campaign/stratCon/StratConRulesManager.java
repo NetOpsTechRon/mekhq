@@ -133,7 +133,7 @@ import org.apache.commons.math3.util.Pair;
  */
 public class StratConRulesManager {
     private static final String RESOURCE_BUNDLE = "mekhq.resources.StratConRulesManager";
-    public final static int BASE_LEADERSHIP_BUDGET = 500;
+    public final static int BASE_LEADERSHIP_BUDGET = 1000;
 
     private static final MMLogger LOGGER = MMLogger.create(StratConRulesManager.class);
 
@@ -2988,7 +2988,7 @@ public class StratConRulesManager {
             return leadershipUnits;
         }
 
-        int totalBudget = min(BASE_LEADERSHIP_BUDGET * leadershipSkill, BASE_LEADERSHIP_BUDGET * 5);
+        int totalBudget = min(BASE_LEADERSHIP_BUDGET * leadershipSkill, BASE_LEADERSHIP_BUDGET * 8);
 
         int primaryUnitType = getPrimaryUnitType(campaign, forceIds);
 
